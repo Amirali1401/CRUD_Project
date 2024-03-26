@@ -21,5 +21,6 @@ from .settings import schema_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include('api.urls')),
     path('openapi/' , schema_view , name='openapi_schema'),
 ]
